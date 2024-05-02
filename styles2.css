@@ -1,0 +1,300 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffffe1;
+}
+
+header {
+    position: relative; /* Ensure content stays on top of the background */
+    z-index: 2; /* Ensure content appears above the blue layer */
+    background-color: transparent; /* Set background color to transparent */
+    margin: 0 0 0.5%;
+}
+
+/*Navigation bar*/
+nav {
+    margin-left: auto; /* Pushes the nav to the right */
+    position: fixed;
+    width: 100%;
+    background-color: #253887; /* Set navigation bar background color */
+    padding: 0.5% 0; /*padding top+bottom, right+left*/
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center;
+    padding-right: 5%;
+}
+
+nav ul li:first-child {
+    justify-self: flex-start; /* Align first item to the start */
+}
+
+nav ul li:not(:first-child) {
+    justify-self: flex-end; /* Align subsequent items to the end */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    top: 20px; 
+    left: 20px; 
+    width: 20%; 
+    height: auto;
+}
+
+/*Sections*/
+main {
+    padding: 0px;
+}
+
+section{
+    overflow: hidden;
+}
+
+h2 {
+    color: #333;
+}
+
+.background-section {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    background-image: url('golf_afslaan.jpg'); /* Add your image path */
+    background-size: cover;
+    background-position: center;
+}
+
+.container0 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1; /* Ensure the text is above the filter */
+}
+
+.background-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.3); /* Blue filter */
+    z-index: 0;
+}
+
+.container {
+    background-color: #253887;
+    max-width: 100%;
+    margin: 0 auto 30px;
+    padding: 2% 5% 4%; /* Add padding top, right+left, bottom*/
+}
+.container h2 {
+    color:#fff
+}
+
+.container p {
+    color:#fff
+}
+
+.container2 {
+    background-color: #ffffff;
+    max-width: 80%;
+    margin: auto;
+    padding: 2% 5% 4%; /* Add padding top, right+left, bottom*/
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a shadow */
+}
+
+.container3 {
+    max-width: 100%;
+    margin: auto auto 0px;
+    padding: 2% 5% 4%; /* Add padding top, right+left, bottom*/
+}
+
+/*Contact form*/
+.container4 {
+    max-width: 50%;
+    margin: 50px auto; /*margin top+bottom, right+left*/
+    background-color: #fff;
+    padding: 2% 3% 4%; /* same to all four sides*/
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+.container4 h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+
+/*Perpetual photo banner*/
+.photobanner{
+    width:202%;
+    margin-bottom:80px;
+    overflow: hidden;
+}
+
+.photobanner img {
+    margin-right: calc(2vw/6); /* Adjust the margin to increase or decrease space between logos */
+    width: calc((290vw/18)); /* Adjust this percentage to your preference */
+    height: auto; /* This maintains the aspect ratio of the image */
+  }
+
+/* Keyframe animations */
+.first {
+    -webkit-animation: bannermove 20s linear infinite;
+       -moz-animation: bannermove 20s linear infinite;
+        -ms-animation: bannermove 20s linear infinite;
+         -o-animation: bannermove 20s linear infinite;
+            animation: bannermove 20s linear infinite;
+}
+ 
+@keyframes bannermove {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -50%;
+    }
+}
+ 
+@-moz-keyframes bannermove {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -50%;
+    }
+}
+ 
+@-webkit-keyframes bannermove {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -50%;
+    }
+}
+ 
+@-ms-keyframes bannermove {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -50%;
+    }
+}
+ 
+@-o-keyframes bannermove {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    nav ul li a {
+        font-size: 10px;
+    }
+
+    nav ul li:first-child {
+        justify-self: space-between; /* Align all items evenly */
+    }
+    
+    nav ul li:not(:first-child) {
+        justify-self: space-between; 
+    }
+
+    .logo {
+        top: 0px; 
+        left: 0px; 
+        width: 50%;
+    }
+
+    main p {
+        font-size: 14px;
+    }
+    main h1 {
+        font-size: 14px;
+    }
+    .container0 h1{
+        font-size: 12px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px; 
+    }
+
+    .background-section {
+        height: 250px;
+    }
+
+
+    .container4 {
+        max-width: 90%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+        width: 95%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+  }
+
+}
