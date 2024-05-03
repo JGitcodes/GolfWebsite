@@ -113,9 +113,9 @@ h2 {
 }
 
 .container2 {
-    background-color: #fff;
     max-width: 80%;
-    margin: auto;
+    margin: 20px auto 20px;
+    background-color: #fff;
     padding: 2% 5% 4%; /* Add padding top, right+left, bottom*/
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a shadow */
@@ -127,57 +127,9 @@ h2 {
     padding: 2% 5% 4%; /* Add padding top, right+left, bottom*/
 }
 
-/*Contact form*/
-.container4 {
-    max-width: 50%;
-    margin: 300px auto 50px; /*margin top+bottom, right+left*/
-    background-color: #fff;
-    padding: 2% 3% 4%; /* same to all four sides*/
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-.container4 h2 {
-    text-align: center;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="number"],
-  select {
-    width: 98%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-
-
 /*Perpetual photo banner*/
 .photobanner{
     width:202%;
-    margin-bottom:150px;
     overflow: hidden;
 }
 
@@ -240,6 +192,54 @@ h2 {
         margin-left: -50%;
     }
 }
+
+/*Contact form*/
+.container4 {
+    max-width: 50%;
+    margin: 10% auto 2%; /*margin top+bottom, right+left*/
+    background-color: #fff;
+    padding: 2% 3% 4%; /* same to all four sides*/
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+.container4 h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+
 
 /*footer*/
 footer{
