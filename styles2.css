@@ -129,7 +129,7 @@ h2 {
 
 /*Perpetual photo banner*/
 .photobanner{
-    width:202%;
+    width:205%;
     overflow: hidden;
 }
 
@@ -293,8 +293,9 @@ footer{
     .background-section {
         height: 250px;
     }
-
-
+    .photobanner{
+        width:225%;
+    }
     .container4 {
         max-width: 90%;
     }
